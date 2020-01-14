@@ -122,5 +122,6 @@ dist/
 # Temporary folders
 tmp/
 temp/
+help/
 
 # End of https://www.gitignore.io/api/node,linux
