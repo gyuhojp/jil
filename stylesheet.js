@@ -1,19 +1,20 @@
-$(function(){
-    $(".btn-gnavi").on("click", function(){
-        // ハンバーガーメニューの位置を設定
-        var rightVal = 0;
-        if($(this).hasClass("open")) {
-            // 位置を移動させメニューを開いた状態にする
-            rightVal = -300;
-            // メニューを開いたら次回クリック時は閉じた状態になるよう設定
-            $(this).removeClass("open");
-        } else {
-            // メニューを開いたら次回クリック時は閉じた状態になるよう設定
-            $(this).addClass("open");
-        }
- 
-        $("#global-navi").stop().animate({
-            right: rightVal
-        }, 200);
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+(function($) {
+    $(function() {
+        var $header = $('#top-head');
+        // Nav Fixed
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 350) {
+                $header.addClass('fixed');
+            } else {
+                $header.removeClass('fixed');
+            }
+        });
+        // Nav Toggle Button
+        $('#nav-toggle').click(function(){
+            $header.toggleClass('open');
+        });
     });
-});
+})(jQuery);
+</script>
