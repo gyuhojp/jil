@@ -1,7 +1,4 @@
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script>
-(function($) {
-    $(function() {
+$(function() {
         var $header = $('#top-head');
         // Nav Fixed
         $(window).scroll(function() {
@@ -16,5 +13,3 @@
             $header.toggleClass('open');
         });
     });
-})(jQuery);
-</script>
