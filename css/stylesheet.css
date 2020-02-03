@@ -12,7 +12,17 @@ body {
     font-family: 'Lato', sans-serif;
     background: #eee;
 }
- 
+
+#main-visual {
+    background: #1d76a6;
+    background: -webkit-linear-gradient(-45deg, #0062B8, #850047);
+    background: -moz-linear-gradient(-45deg, #0062B8, #850047);
+    background: -ms-linear-gradient(-45deg, #0062B8, #850047);
+    background: -o-linear-gradient(-45deg, #0062B8, #850047);
+    background: linear-gradient(-45deg, #0062B8, #850047);
+    height: 700px;
+}
+
 /* header */
 #top-head {
     top: -100px;
@@ -107,6 +117,9 @@ body {
 }
 
 @media screen and (max-width: 640px) {
+    #main-visual {
+        height: 300px;
+    }
     #top-head,
     .inner {
         width: 100%;
