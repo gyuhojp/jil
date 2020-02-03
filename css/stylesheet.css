@@ -208,9 +208,6 @@ footer a {
 	#top-head.fixed #global-nav ul li a {
 		padding: 0 15px;
 	}
-}
-
-@media screen and (max-width: 640px) {
 	#main-visual {
 		height: 300px;
 	}
