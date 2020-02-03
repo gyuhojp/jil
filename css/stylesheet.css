@@ -7,6 +7,11 @@
     clear: both;
     display: block;
 }
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: #eee;
+}
  
 /* header */
 #top-head {
