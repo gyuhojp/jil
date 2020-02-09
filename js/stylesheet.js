@@ -1,18 +1,15 @@
-$(function() {
-    var $header = $('#top-head');
-
-    // Nav Fixed
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > 300) {
-            $header.addClass('fixed');
-        } else {
-            $header.removeClass('fixed');
+$(function () {
+    $('.sub-menu').on({
+        'mouseenter': function () {
+            $(this).addClass('is-active');
+        },
+        'mouseleave': function () {
+            $(this).removeClass('is-active');
         }
     });
 
-    // Nav Toggle Button
-    $('#nav-toggle').click(function(){
-        $header.toggleClass('open');
-    });
 
+    $('#nav-toggle,#overlay').on('click', function() {
+        $('body').toggleClass('open');
+    });
 });

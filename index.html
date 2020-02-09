@@ -9,30 +9,53 @@
         <script type="text/javascript" src="js/stylesheet.js"></script>
     </head>
     <body>
-        <header id="top-head">
-            <div class="inner">
-                <div id="mobile-head">
-                    <h1 class="logo">Logo</h1>
-                    <div id="nav-toggle">
-                        <div>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
-                <nav id="global-nav">
-                    <ul>
-                        <li><a href="#">TOP</a></li>
-                        <li><a href="#">PRODUCT</a></li>
-                        <li><a href="#">WORKS</a></li>
-                        <li><a href="#">COMPANY</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <header id="global-head">
+            <h1 id="brand-logo">Logo</h1>
         </header>
-        <div id="main-visual"></div>
+         
+        <div id="nav-toggle">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+         
+        <aside id="sidebar">
+            <nav id="global-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="sub-menu">
+                        <a href="#" class="sub-menu-head">About</a>
+                        <ul class="sub-menu-nav">
+                            <li><a href="#">About 1</a></li>
+                            <li><a href="#">About 2</a></li>
+                            <li><a href="#">About 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="#" class="sub-menu-head">Products</a>
+                        <ul class="sub-menu-nav">
+                            <li><a href="#">Product 1</a></li>
+                            <li><a href="#">Product 2</a></li>
+                            <li><a href="#">Product 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+         
+        <main id="main">
+            <div id="main-in">
+                <div id="main-visual">
+                    <h2>Fixed Sidebar</h2>
+                </div>
+            </div><!-- /#main-in -->
+        </main>
+         
+        <div id="overlay"></div>
         <div>
             <h3>Welcome to JapaneseInformationCircleList</h3>
         </div>
