@@ -77,8 +77,15 @@ h3 {
 	color: #033560;
 	width: 260px;
 	text-align: center;
-	padding-top: 60px;
+	padding-top: 30px;
 	z-index: 100;
+}
+
+#global-head img {
+	width: 30%;
+    height: auto;
+    position: relative;
+	object-fit: scale-down;
 }
 
 #sidebar {
@@ -231,6 +238,12 @@ h3 {
 		background: rgba(255,255,255,.8);
 		display: -webkit-flex;
 		display: flex;
+	}
+	#global-head img {
+		width: 5%;
+		height: auto;
+		position: relative;
+		object-fit: scale-down;
 	}
 
 	#sidebar {
