@@ -121,17 +121,27 @@ h3 {
 	color: #fff;
 	background: #033560;
 }
+#global-nav .sub-sub-menu.is-active > a,
+#global-nav a:hover {
+	color: #033560;
+	background: #fff;
+}
+
 
 #global-nav .sub-menu-nav a,
-#global-nav .sub-menu:hover .sub-menu-nav {
+#global-nav .sub-menu:hover .sub-menu-nav,
+#global-nav .sub-sub-menu-nav a,
+#global-nav .sub-sub-menu:hover .sub-sub-menu-nav {
 	width: 230px;
 }
 
 /* sub-menu icon */
-#global-nav .sub-menu-head {
+#global-nav .sub-menu-head,
+#global-nav .sub-sub-menu-head {
 	position: relative;
 }
-#global-nav .sub-menu-head:after {
+#global-nav .sub-menu-head:after,
+#global-nev .sub-sub-menu-head:after {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -141,29 +151,43 @@ h3 {
 	vertical-align: middle;
 	width: 8px;
 	height: 8px;
-	border-top: 1px solid #033560;
-	border-right: 1px solid #033560;
 	-moz-transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
+#global-nav .sub-menu-head:after{
+	border-top: 1px solid #033560;
+	border-right: 1px solid #033560;
+}
+#global-nav .sub-sub-menu-head:after{
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
 
 
 /* sub-menu */
-#global-nav .sub-menu-nav {
+#global-nav .sub-menu-nav,
+#global-nav .sub-sub-menu-nav {
 	position: fixed;
-	background: #033560;
-	color: #fff;
 	top: 0;
 	padding-top: 90px;
-	left: 260px;
 	width: 0;
 	height: 100%;
 	overflow: hidden;
-
+	
 	-moz-transition: width .2s ease-out;
 	-webkit-transition: width .2s ease-out;
 	transition: width .2s ease-out;
+}
+#global-nav .sub-menu-nav{
+	left: 260px;
+	background: #033560;
+	color: #fff;
+}
+#global-nav .sub-menu-nav .sub-sub-menu-nav{
+	left: 490px;
+	background: #fff;
+	color: #033560;
 }
 #global-nav .sub-menu.is-active > a:after,
 #global-nav .sub-menu-head:hover:after {
@@ -176,7 +200,17 @@ h3 {
 	color: #033560;
 	background: #fff;
 }
-
+#global-nav .sub-sub-menu.is-active > a:after,
+#global-nav .sub-sub-menu-head:hover:after {
+	border-color: #033560;
+}
+#global-nav .sub-sub-menu-nav a {
+	color: #033560;
+}
+#global-nav .sub-sub-menu-nav a:hover {
+	color: #fff;
+	background: #033560;
+}
 
 /* nav-toggle */
 #nav-toggle {
@@ -230,6 +264,11 @@ h3 {
 @media screen and (max-width: 900px) {
 	#main-in {
 		padding-left: 0;
+	}
+	#main-visual{
+		margin: auto;
+		padding-left: 20px;
+		text-align: left;
 	}
 
 	#global-head {
